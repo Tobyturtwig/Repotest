@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Carbon Tiptoe</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <div class="w3-top">
+        <div class="w3-row w3-padding black-color black-background-color">
+            <div class="w3-col s3">
+                <a href="#" class="w3-button w3-block custom-color black-background-color">HOME</a>
+            </div>
+            <div class="w3-col s3">
+                <a href="#about" class="w3-button w3-block custom-color black-background-color">ABOUT</a>
+            </div>
+            <div class="w3-col s3">
+                <a href="#donate" class="w3-button w3-block custom-color black-background-color">DONATE</a>
+            </div>
+            <div class="w3-col s3">
+                <a href="#" class="w3-button w3-block custom-color black-background-color" onclick="document.getElementById('trigger-modal').style.display='block'">REGISTER</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-content" style="max-width:1920px">
+
+
+        <header class="w3-display-container w3-wide" id="home">
+            <img class="w3-image" src="nature1.jpg" alt="Image of a sunset from a beach" width="1920" height="1020">
+            <div class="w3-display-left w3-padding-large">
+                <h1 class="w3-jumbo custom-color stroke w3-hide-small"><b>Carbon Tiptoe</b></h1>
+                <h2 class="custom-color stroke w3-hide-small">A site to properly measure your carbon footprint!</h2>
+                <h6><button class="w3-button custom-color black-background-color w3-padding-large w3-large" onclick="document.getElementById('trigger-modal').style.display='block'">REGISTER HERE</button></h6>
+            </div>
+        </header>
+
+        <div id="trigger-modal" class="w3-modal w3-animate-opacity">
+            <div class="w3-modal-content custom-color black-background-color" style="padding:32px">
+                <button type="button" class="w3-button black-color custom-background-color w3-right" onclick="document.getElementById('trigger-modal').style.display='none'">Close</button>
+                <h2 class="w3-wide custom-color">REGISTER</h2>
+                <div id="ct-form" class="w3-container custom-color black-background-color">
+                    <form>
+
+                        <p>User Details</p>
+                        <div id="userDetails" class="w3-container black-color black-background-color">
+                            <p><input class="w3-input w3-border custom-color black-background-color" type="text" placeholder="Enter Name"></p>
+                            <p><input class="w3-input w3-border custom-color black-background-color" type="text" placeholder="Enter Surname"></p>
+                            <p><input class="w3-input w3-border custom-color black-background-color" type="text" placeholder="Enter Username"></p>
+                            <p><input class="w3-input w3-border custom-color black-background-color" type="text" placeholder="Enter Password"></p>
+                        </div>
+                        <p>Addresses</p>
+                        <div id="addresses" class="w3-container black-color black-background-color">
+                            <p><input class="w3-input w3-border custom-color black-background-color" type="text" placeholder="Enter Home Address"></p>
+                            <p><input class="w3-input w3-border custom-color black-background-color" type="text" placeholder="Enter Work Address"></p>
+                        </div>
+                        <p>Contacts</p>
+                        <div id="contacts" class="w3-container black-color black-background-color">
+                            <p><input class="w3-input w3-border custom-color black-background-color" type="text" placeholder="Enter Mobile Number"></p>
+                            <p><input class="w3-input w3-border custom-color black-background-color" type="text" placeholder="Enter Email"></p>
+                        </div>
+                        <button type="button" class="w3-button w3-block w3-padding-large black-color custom-background-color w3-margin-bottom" onclick="document.getElementById('trigger-modal').style.display='none'">Register</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="w3-padding-32 w3-center custom-color black-background-color" id="about">
+            <h1 class="w3-jumbo"><b>About</b></h1>
+            <p class="w3-large">A website created by Toby Williams</p>
+            <div class="w3-row-padding" style="margin-top:64px">
+                <div class="w3-half w3-section">
+                    <ul class="w3-ul w3-card w3-hover-shadow">
+                        <li class="custom-color black-background-color w3-xlarge w3-padding-64">lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                        <li class="w3-padding-64 w3-xlarge">Any Donations would be greatly appreciated!</li>
+                        </li>
+                        <li class="custom-color black-background-color w3-padding-64">
+                            <button class="w3-button w3-wide black-color custom-background-color w3-padding-large" onclick="document.getElementById('download').style.display='block'"><i class="fa fa-download"></i> Donate here</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="w3-half w3-section">
+                    <img src="nature2.jpg" alt="An image of a deer with the setting sun behind it" style="width:100%;max-width:1000px" class="w3-margin-top">
+                </div>
+            </div>
+        </div>
+        <footer class="w3-container black-color black-background-color" style="padding:32px">
+            <a href="#" class="w3-button custom-color black-background-color w3-padding-large w3-margin-bottom"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+        </footer>
+    </div>
+    
+</body>
+</html>
